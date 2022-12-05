@@ -31,6 +31,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <failOnViolation>false</failOnViolation>
+                </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>com.puppycrawl.tools</groupId>

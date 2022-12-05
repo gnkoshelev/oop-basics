@@ -15,7 +15,7 @@ public final class AwesomeMain {
     public static void main(final String[] args) {
         System.out.println("Hello, world!");
         WhiteBoard board1 = new WhiteBoard(Size.XXL);
-        WhiteBoard board2 = new WhiteBoard(Size.S, new Color(0,0,0));
+        WhiteBoard board2 = new WhiteBoard(Size.S, new Color(0, 0, 0));
         board1.write("public class WhiteBoard extends Board {");
         board1.write("\n");
         board1.write("static final Color COLOR = Color.WHITE_COLOR;");
@@ -25,5 +25,12 @@ public final class AwesomeMain {
         board1.clean();
 
         System.out.println(board1);
+
+        PaintableTable table = new PaintableTable(80, 120, 80, Material.WOOD, LengthUnit.CENTIMETER);
+
+        Classroom classroom = new Classroom();
+        classroom.addPaintableSurface(board1);
+        classroom.addPaintableSurface(board2);
+        classroom.addPaintableSurface(table);
     }
 }

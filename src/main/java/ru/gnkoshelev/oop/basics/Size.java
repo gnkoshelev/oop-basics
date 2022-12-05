@@ -4,10 +4,25 @@ package ru.gnkoshelev.oop.basics;
  * @author Gregory Koshelev
  */
 public enum Size {
+    /**
+     * XXL
+     */
     XXL(250, 120),
+    /**
+     * XL
+     */
     XL(200, 100),
+    /**
+     * L
+     */
     L(180, 80),
+    /**
+     * M
+     */
     M(150, 80),
+    /**
+     * S
+     */
     S(15,10);
 
     private final int widthCm;

@@ -3,7 +3,7 @@ package ru.gnkoshelev.oop.basics;
 /**
  * @author Gregory Koshelev
  */
-public class WhiteBoard extends Board {
+public class WhiteBoard extends Board implements PaintableSurface {
     static final Color COLOR = Color.WHITE_COLOR;
     private StringBuilder content = new StringBuilder();
 
@@ -15,6 +15,7 @@ public class WhiteBoard extends Board {
         super(size, color);
     }
 
+    @Override
     public void write(String text) {
         content.append(text);
     }
